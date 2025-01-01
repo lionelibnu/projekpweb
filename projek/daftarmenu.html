@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Nasi Goreng</title>
+    <style>
+        body{
+            background-color: #fff7d1;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            max-width: 800px;
+            cursor: pointer;
+            transition: transform 0,1s, background-color 0.1s;
+        }
+        .card:hover{
+            transform: scale(1.1);
+            background-color: #efeeee;
+        }
+        .card:active{
+            transform: scale(1.5);
+        }
+        .card img {
+            max-width: 300px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .card-title {
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .card-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2 class="container">DAFTAR MAKANAN</h2>
+    <div class="container">
+        <!--gambar 1-->
+        <div class="card">
+            <img src="gambar/nasgor.jpg" alt="Nasi Goreng" class="rounded">
+            <div class="card-body">
+                <h4 class="card-title mb-0">NASGOR</h4>
+                <hr>
+                <p>Nasi goreng adalah makanan
+                    khas Indonesia yang terbuat dari 
+                    nasi yang digoreng dengan berbagai bumbu
+                    dan bahan tambahan. Nasi goreng merupakan 
+                    makanan yang populer di Indonesia dan juga 
+                    di negara-negara Asia lainnya.</p>
+            </div>
+        </div>
+        <!--gambar 2-->
+        <div class="card">
+            <img src="gambar/baksojpg.jpg" alt="Nasi Goreng" class="rounded">
+            <div class="card-body">
+                <h4 class="card-title mb-0">BAKSO</h4>
+                <hr>
+                <p>Kata "bakso" berasal dari 
+                    bahasa Hokkien, yaitu "Bak-So" 
+                    yang berarti daging yang digiling.
+                    Bakso merupakan makanan khas Tionghoa
+                    Indonesia yang populer di Indonesia, 
+                    Singapura, dan Malaysia</p>
+            </div>
+        </div>
+    <!--gambar 3-->
+    <div class="card">
+        <img src="gambar/miayam.jpg" alt="Nasi Goreng" class="rounded">
+        <div class="card-body">
+            <h4 class="card-title mb-0">MIE AYAM</h4>
+            <hr>
+            <p>Mie ayam adalah hidangan khas
+                Indonesia yang terbuat dari 
+                Mie kuning yang dibumbui dengan potongan daging ayam,
+                sayuran, dan saus kecap</p>
+        </div>
+    </div>
+    <!--gambar 4-->
+    <div class="card">
+        <img src="gambar/seblack.jpg" alt="Nasi Goreng" class="rounded">
+        <div class="card-body">
+            <h4 class="card-title mb-0">SEBLACK</h4>
+            <hr>
+            <p>Seblak adalah makanan khas Sunda
+                yang berasal dari Bandung, Jawa Barat, 
+                yang terbuat dari kerupuk basah atau 
+                kering yang dimasak dengan bumbu pedas 
+                dan gurih</p>
+        </div>
+    </div>
+    <!--gambar 5-->
+    <div class="card">
+        <img src="gambar/peyeum.jpeg" alt="Nasi Goreng" class="rounded">
+        <div class="card-body">
+            <h4 class="card-title mb-0">PEYEUM</h4>
+            <hr>
+            <p>Peuyeum adalah makanan tradisional khas
+                Jawa Barat yang terbuat dari singkong yang 
+                difermentasi. Kata "peuyeum" 
+                dalam bahasa Sunda berarti tape atau fermentasi.</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>

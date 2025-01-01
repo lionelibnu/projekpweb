@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Sederhana</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gaya umum */
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+        }
+        .navbar-toggler-icon{
+            border: none;
+            color: #ffffff;
+            border-radius: 9px;
+            
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+        .nav-item{
+            color: #ffffff;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #007bff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .hero a {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        
+
+        .hero a:hover {
+            background: #0056b3;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 40px 0;
+            background: #f4f4f4;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .feature img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Contoh</div>
+                <button class="navbar-toggler" type="button" aria-controls="tombol"
+                data-bs-toggle="collapse" data-bs-target="#tombol" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="tombol">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">tentang</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Fitur</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>    
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Selamat Datang</h1>
+            <p>Contoh Landing page Sederhana</p>
+            <a href="#features">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Portofolio</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>Contoh 1</h3>
+                    <p>Portofolio 1</p>
+                </div>
+                <div class="feature">
+                    <h3>Contoh 2</h3>
+                    <p>Portofolio ke 2</p>
+                </div>
+                <div class="feature">
+                    <h3>Contoh 3</h3>
+                    <p>Portofolio ke 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
